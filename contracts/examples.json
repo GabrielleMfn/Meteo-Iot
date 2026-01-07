@@ -1,0 +1,40 @@
+{
+  "telemetry": {
+    "description": "Donnees meteo envoyees par les ESP32",
+    "example": {
+      "temperature": 22.5,
+      "humidity": 65,
+      "battery": 87,
+      "timestamp": 1704625200000
+    }
+  },
+  "events": {
+    "description": "Evenement ponctuel du device",
+    "example": {
+      "type": "startup",
+      "message": "Device boot complete"
+    }
+  },
+  "cmd": {
+    "description": "Commande envoyee au device",
+    "example": {
+      "action": "reboot",
+      "params": {}
+    }
+  },
+  "status": {
+    "description": "Etat du device",
+    "example": {
+      "online": true,
+      "uptime": 3600
+    }
+  },
+  "flipper": {
+    "description": "Event flipper/pinball",
+    "example": {
+      "button": "left",
+      "value": 1,
+      "timestamp": 1704625200000
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "iot-bridge",
+  "version": "1.0.0",
+  "description": "Bridge MQTT vers WebSocket pour le front",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "mqtt": "^5.14.1",
+    "ws": "^8.19.0"
+  }
+}
