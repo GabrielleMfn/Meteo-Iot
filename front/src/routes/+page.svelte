@@ -104,9 +104,9 @@
 			stations[deviceId] = {
 				deviceId,
 				name: DEVICE_NAMES[deviceId] || deviceId,
-				temperature: data.temperature ?? data.temp ?? null,
-				humidity: data.humidity ?? data.hum ?? null,
-				battery: data.battery ?? data.bat ?? null,
+				temperature: data.tempC ?? data.temperature ?? data.temp ?? null,
+				humidity: data.humPct ?? data.humidity ?? data.hum ?? null,
+				battery: data.batteryPct ?? data.battery ?? data.bat ?? null,
 				lastUpdate: payload.timestamp
 			};
 		}

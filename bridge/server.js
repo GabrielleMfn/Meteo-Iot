@@ -11,7 +11,7 @@ const wsClients = new Set();
 
 // pour eviter de spam le terminal
 let msgCount = 0;
-const LOG_EVERY = 50; // log 1 message sur 50 sinon ça spamme trop
+const LOG_EVERY = 50;
 
 // connexion au broker MQTT
 const mqttClient = mqtt.connect(MQTT_BROKER);
@@ -47,7 +47,7 @@ mqttClient.on('message', (topic, message) => {
     
     msgCount++;
     if (msgCount % LOG_EVERY === 0) {
-        console.log(`[${msgCount}] ${topic} - ${message.toString().substring(0, 60)}...`);
+        console.log(`[${msgCount}] ${topic} - ${message.toString().substring(0, 80)}`);
     }
     
     // broadcast a tous les clients
